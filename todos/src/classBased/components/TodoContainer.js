@@ -1,4 +1,5 @@
 import React from 'react';
+import { Route } from "react-router-dom"
 import Header from './Header';
 import TodosList from './TodosList';
 import InputTodo from './InputTodo'
@@ -74,6 +75,7 @@ class TodoContainer extends React.PureComponent {
 
   render() {
     return (
+      <Route exact path="/">
       <div className="container">
       <div className="inner">
         <Header />
@@ -86,7 +88,9 @@ class TodoContainer extends React.PureComponent {
         />
       </div>
     </div>
+    </Route>
     )
   }
-}
+};
+
 export default TodoContainer;
