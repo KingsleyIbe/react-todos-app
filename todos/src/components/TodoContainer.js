@@ -1,5 +1,7 @@
 import React from 'react';
+import Header from './Header';
 import TodosList from './TodosList';
+import InputTodo from './InputTodo'
 
 class TodoContainer extends React.PureComponent {
   constructor(props) {
@@ -39,12 +41,24 @@ class TodoContainer extends React.PureComponent {
   };
 
   delTodo = id => {
-    console.log("deleted", id);
+    this.setState({
+      todos: [
+        ...this.state.todos.filter(todo => {
+          return todo.id !== id;
+        })
+      ]
+    });
   };
   render() {
     return (
       <div>
-        <TodosList todos={this.state.todos} />
+        <Header />
+      <InputTodo />
+      <TodosList
+        todos={this.state.todos}
+        handleChangeProps={this.handleChange}
+        deleteTodoProps={this.delTodo}
+      />
       </div>
     );
   }
