@@ -83,9 +83,9 @@ Then run the server:
 
 ### 👨🏾‍⚕️ Kingsley Ibe
 
-- GitHub: [@githubhandle](https://github.com/kingsleyibe)
-- Twitter: [@twitterhandle](https://twitter.com/ibekingsley2)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/kingsley-ibe-5669a5134)
+- [Github](https://github.com/kingsleyibe)
+- [Twiter](https://twitter.com/ibekingsley2)
+- [LinkedIn](https://www.linkedin.com/in/kingsley-ibe-5669a5134)
 
 ## 🤝 Contributing
 
