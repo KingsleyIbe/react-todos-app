@@ -1,25 +1,31 @@
-import React, { Component } from "react";
-import { FaPlusCircle } from "react-icons/fa";
+import React, { Component } from 'react';
+import { FaPlusCircle } from 'react-icons/fa';
 
 class InputTodo extends Component {
-  state = {
-    title: "",
-  }
-  onChange = e => {
-    this.setState({
-      [e.target.name]: e.target.value,
-    })
+  constructor() {
+    super();
+    this.state = {
+      title: '',
+    };
   }
 
-  handleSubmit = e => {
-    e.preventDefault()
-    if (this.state.title.trim()) {
-      this.props.addTodoProps(this.state.title)
+  onChange = (e) => {
+    this.setState({
+      [e.target.name]: e.target.value,
+    });
+  }
+
+  const { title } = this.state;
+
+  handleSubmit = (e) => {
+    e.preventDefault();
+    if (title.trim()) {
+      this.props.addTodoProps(this.state.title);
       this.setState({
-        title: "",
-      })
+        title: '',
+      });
     } else {
-      alert("Please write item")
+      alert('Please write item');
     }
   }
 
@@ -30,13 +36,16 @@ class InputTodo extends Component {
           type="text"
           className="input-text"
           placeholder="Add todo..."
-          value={this.state.title}
+          value={title}
           name="title"
           onChange={this.onChange}
         />
-        <button className="input-submit"><FaPlusCircle /></button>
+        <button type="submit" className="input-submit">
+          <FaPlusCircle />
+          </button>
       </form>
-    )
+    );
   }
 }
-export default InputTodo
+
+export default InputTodo;
