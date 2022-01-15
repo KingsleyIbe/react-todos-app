@@ -84,7 +84,7 @@ Then run the server:
 ### 👨🏾‍⚕️ Kingsley Ibe
 
 - [Github](https://github.com/kingsleyibe)
-- [Twitter](https://twitter.com/ibekingsley2)
+- [Twiter](https://twitter.com/ibekingsley2)
 - [LinkedIn](https://www.linkedin.com/in/kingsley-ibe-5669a5134)
 
 ## 🤝 Contributing
