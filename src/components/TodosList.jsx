@@ -14,7 +14,7 @@ const TodosList = (props) => {
     <ul>
       {todos && todos.map((todo) => (
         <TodoItem
-          key={todo.id}
+          key={todo?.id}
           todo={todo}
           handleChangeProps={handleChangeProps}
           deleteTodoProps={deleteTodoProps}

@@ -38,7 +38,7 @@ const InputTodo = (props) => {
         name="title"
         onChange={onChange}
       />
-      <button type="button" className="input-submit">
+      <button type="button" className="input-submit" onClick={handleSubmit}>
         <FaPlusCircle />
       </button>
     </form>

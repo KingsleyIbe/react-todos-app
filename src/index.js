@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
-import TodoContainer from './functionBased/Components/TodoContainer';
+import TodoContainer from './components/TodoContainer';
 import './styles/App.css';
 
 ReactDOM.render(
