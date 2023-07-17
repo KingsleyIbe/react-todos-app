@@ -1,11 +1,11 @@
-// Reset
+/* Reset */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-// Main styling
+/* Main styling */
 body {
   font-family: "Segoe UI", Arial, sans-serif;
   line-height: 1.4;
@@ -13,6 +13,16 @@ body {
   background: #fff;
   height: 100vh;
   padding: 10px;
+}
+
+.title {
+  font-size: 6rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  line-height: 1em;
+  color: #ececec;
+  text-transform: lowercase;
+  text-align: center;
 }
 
 .container {
