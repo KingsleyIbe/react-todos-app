@@ -12,7 +12,7 @@ const TodosList = (props) => {
 
   return (
     <ul>
-      {todos.map((todo) => (
+      {todos && todos.map((todo) => (
         <TodoItem
           key={todo.id}
           todo={todo}
