@@ -4,7 +4,7 @@
   "name": "Taskaid Chrome Extension",
   "description": "This Chrome extension helps users organize their tasks into a list",
   "action": {
-    "default_popup": "js/index.html",
+    "default_popup": "./public/index.html",
     "default_title": "Taskaid Chrome Extension"
   }
 }
