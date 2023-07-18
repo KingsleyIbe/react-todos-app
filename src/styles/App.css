@@ -13,6 +13,16 @@ body {
   padding: 10px;
 }
 
+.title {
+  font-size: 6rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  line-height: 1em;
+  color: #ececec;
+  text-transform: lowercase;
+  text-align: center;
+}
+
 .container {
   display: flex;
   flex-direction: column;
