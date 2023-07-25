@@ -1,19 +1,19 @@
 const path = require('path');
-const HTMLPlugin = require('html-webpack-plugin');
+// const HTMLPlugin = require('html-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
-// const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 // const HtmlWebpackRootPlugin = require('html-webpack-root-plugin');
 // const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-function getHtmlPlugins(chunks) {
-  return chunks.map(
-    (chunk) => new HTMLPlugin({
-      title: 'Taskaid Chrome Extension',
-      filename: `${chunk}.html`,
-      chunks: [chunk],
-    }),
-  );
-}
+// function getHtmlPlugins(chunks) {
+//   return chunks.map(
+//     (chunk) => new HTMLPlugin({
+//       title: 'Taskaid Chrome Extension',
+//       filename: `${chunk}.html`,
+//       chunks: [chunk],
+//     }),
+//   );
+// }
 
 module.exports = {
   entry: {
@@ -45,11 +45,11 @@ module.exports = {
     new CopyPlugin({
       patterns: [{ from: 'manifest.json', to: '../manifest.json' }],
     }),
-    ...getHtmlPlugins(['index']),
-    // new HtmlWebpackPlugin({
-    //   title: 'Application name',
-    //   template: './src/index.html',
-    // }),
+    // ...getHtmlPlugins(['index']),
+    new HtmlWebpackPlugin({
+      title: 'Taskaid Chrome Extension',
+      template: './src/index.html',
+    }),
     // new HtmlWebpackPlugin(),
     // new HtmlWebpackRootPlugin(),
   ],
